@@ -1,0 +1,9 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "<h1>Hello, this is my local website!</h2><h1>made by thejal productions</h1>       <h3>this website made by a talking community</h3>          <h3>you can talk wiyh your frinds</h3>    <h3>this is a page can get link for community</h3><h2>the link is</h2><h4>@talkwith talkcommunity.com</h4>"
+if __name__ == "__main__":
+    app.run()
